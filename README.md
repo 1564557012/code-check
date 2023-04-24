@@ -161,10 +161,10 @@ plugins: [vue(), eslintPlugin()]
 
 #### 5. 修改添加常见配置文件
 
-外部新建文件 `.eslintrcignore`、`.prettierrc.cjs`、`.prettierignore`
+外部新建文件 `.eslintignore`、`.prettierrc.cjs`、`.prettierignore`
 
 ```
-.eslintrcignore文件内容：
+..eslintignore文件内容：
 
 *.sh
 node_modules
@@ -550,4 +550,24 @@ module.exports = {
 
 项目配置的内容
 文件内容 VITE_BASE_URL = 'http://yewu-pre.jd.com/api'
+```
+vscode settings.json
+```
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[ts]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[less]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"typescript.tsdk": "node_modules/typescript/ib"
+}
 ```
